@@ -1,0 +1,27 @@
+{
+  "name": "blob",
+  "version": "1.0.0",
+  "description": "zhubo's blob website",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "serve": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "koa",
+    "ejs",
+    "blob"
+  ],
+  "author": "zhubo",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-ejs": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^8.0.0"
+  }
+}
