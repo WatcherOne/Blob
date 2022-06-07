@@ -7,7 +7,7 @@
  ******************************************************************************/
 
 import Router from 'koa-router'
-import IndexController from '../../controllers/indexController.js'
+import IndexController from '../../java/controllers/indexController.js'
 
 const router = Router()
 
