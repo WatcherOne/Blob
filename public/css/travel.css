@@ -2,6 +2,8 @@
     position: relative;
     height: 40px;
     line-height: 40px;
+    /* 因为 filter 属性 使图片层级上下文发生了变化，默认配了 z-index:0 */
+    z-index: 100;
 }
 
 @media only screen and (min-width: 700px) {
