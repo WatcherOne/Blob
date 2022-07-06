@@ -1,0 +1,55 @@
+.spin-container {
+    display: flex;
+    margin: auto;
+    position: relative;
+    width: 650px;
+    height: 500px;
+    cursor: pointer;
+}
+
+.spin-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 650px;
+    height: 100%;
+    line-height: 500px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+    transform: rotateY(0deg);
+}
+
+.nav-model {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,100%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.nav-model .img-box {
+    width: 175px;
+    height: 220px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation: fadeInUp .5s; */
+    /* animation-name: fadeInUp;
+    animation-delay: 0.2s; */
+}
+
+.nav-model .img-box img {
+    width: 100%;
+    height: calc(100% - 20px);
+}

@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+/* 动画 */
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-100%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.fadeOutUp {
+    animation-name: fadeOutUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0,-100%,0);
+    }
+}

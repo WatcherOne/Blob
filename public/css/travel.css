@@ -1,0 +1,144 @@
+.navigation {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+
+@media only screen and (min-width: 700px) {
+    .navigation {
+        display: none;
+    }
+}
+
+.navigation .navigation-header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #666;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navigation .navigation-header .change-menu {
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.navigation .navigation-header .change-menu.opened {
+    transform: rotate(180deg);
+}
+
+.navigation .menu-container {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    color: white;
+    background: #666;
+    transform: translate3d(0,-100%,0);
+    transition: all 0.2s;
+}
+
+.menu-container .menu-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.menu-container .menu-list .nav-item {
+    padding-left: 30px;
+    border-top: 1px solid #777;
+}
+
+.menu-container .menu-list .nav-item a {
+    display: block;
+    font-size: 14px;
+    color: white;
+    transition: color .3s;
+}
+
+.menu-container .menu-list .nav-item a:hover {
+    color: #4f90d2;
+}
+
+.travel-container {
+    padding: 30px 20px 0;
+}
+
+.travel-container .top-title {
+    font-size: 28px;
+    color: #808080;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.travel-container .nav-list {
+    border-top: 1px solid #BABABA;
+    border-bottom: 1px solid #BABABA;
+}
+
+.travel-container .nav-list .menu-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .travel-container .nav-list .menu-list {
+        display: none;
+    }
+}
+
+.travel-container .nav-list .menu-list .nav-item {
+    margin: 0 10px;
+}
+
+.travel-container .nav-list .menu-list .nav-item a {
+    display: inline-block;
+    min-width: 60px;
+    padding: 7px 0;
+    text-align: center;
+    color: #6B6B6B;
+    transition: color 0.2s ease;
+}
+
+.travel-container .nav-list .menu-list .nav-item:hover a {
+    color: #000;
+}
+
+.img-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 40px 20px 0;
+}
+
+.img-list .img-item {
+    width: 160px;
+    height: 200px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.img-list .img-item img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: filter .2s;
+}
+
+.img-list .img-item img:hover {
+    filter: grayscale(0%);
+}

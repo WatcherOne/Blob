@@ -14,8 +14,16 @@ class IndexController {
         })
     }
 
+    async getTravelPage (ctx) {
+        await ctx.render('travel/index', {
+            title: '旅行日记'
+        })
+    }
+
     async getNotPage (ctx) {
-        await ctx.render('404')
+        await ctx.render('404', {
+            title: '404'
+        })
     }
 }
 

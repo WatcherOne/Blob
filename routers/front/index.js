@@ -11,8 +11,9 @@ import IndexController from '../../java/controllers/indexController.js'
 
 const router = Router()
 
-router.get('/', IndexController.getIndexPage)
+router.get('/', IndexController.getTravelPage)
 router.get('/index', IndexController.getIndexPage)
+router.get('/travel', IndexController.getTravelPage)
 router.get('/404', IndexController.getNotPage)
 
 export default router
