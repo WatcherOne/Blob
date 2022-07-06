@@ -15,6 +15,10 @@ a {
     display: none;
 }
 
+.bg-color {
+    background: rgb(12 52 78 / 50%);
+}
+
 /* 动画 */
 .fadeInDown {
     animation-name: fadeInDown;
