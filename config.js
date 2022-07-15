@@ -1,5 +1,5 @@
 export const SYSTEM = {
-    hostname: '192.168.0.193',
+    hostname: '127.0.0.1',
     port: 5000,
     pageSize: 20
 }
